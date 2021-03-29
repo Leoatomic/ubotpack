@@ -1,74 +1,120 @@
 {
-  "name": "atomicuserbot",
+  "name": "userbot",
   "logo": "https://telegra.ph/file/c8ac158ed6ce3799d8dac.jpg",
-  "keywords": [
-    "plugin",
-    "modular",
-    "productivity"
-  ],
-  "repository": "https://github.com/leoatomic/userbot/",
-  "website": "#TODO",
-  "success_url": "#TODO",
+  "repository": "https://github.com/leoatomic/userbot",
   "env": {
+    "ENV": {
+      "description": "NON MODIFICARE serve per attivare Heroku.",
+      "value": "ANYTHING"
+    },
+    "TEMP_DOWNLOAD_DIRECTORY": {
+      "description": "Directory dei file NON MODIFICARE!",
+      "value": "./userbot/DOWNLOADS/",
+      "required": false
+    },
     "ALIVE_NAME": {
-      "description": "give your name",
+      "description": "Inserisci la @ del tuo account Telegram",
       "value": ""
     },
+    "AUTONAME": {
+      "description": "Requisito per il modulo autoprofilo.py imposta un nome che apparirà come nome di telegram.",
+      "value": "",
+      "required": false
+    },
     "APP_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "Valori ottenuti da my.telegram.org!",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "Valori ottenuti da my.telegram.org!",
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "Get this value by running python3 telesetup.py locally or https://generatestringsession.sandeep1709.repl.run",
+      "description": "Valore ottenuto da termux o telesetup.py",
       "value": ""
-    },
-    "TG_BOT_USERNAME": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the username of your bot",
-      "value": ""
-    },
-    "TG_BOT_TOKEN": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
-      "value": ""
-    },
-    "COMMAND_HAND_LER": {
-      "description": "Set this one with only one the symbol to use it before your command to run like . , ' `",
-      "value": ".",
-      "required": false
-    },
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable heroku.",
-      "value": "ANYTHING",
-      "required": false
     },
     "HEROKU_API_KEY": {
-      "description": "Required for updating the bot and other stuff get it from https://dashboard.heroku.com/account",
+      "description": "Vai su https://dashboard.heroku.com/account, vai su API KEY premi Reveal e copiala.",
       "value": "",
       "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "YOUR app name ",
+      "description": "Valore uguale ad App Name inserito all'inizio.",
+      "value": "",
+      "required": false
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "Crea un gruppo privato e inserisci il ChatId per il log (es:-10012345678).",
+      "value": ""
+    },
+    "MAX_FLOOD_IN_P_M_s": {
+      "description": "Massimo numero di messaggi che una persona può inviarti prima di essere bloccata. Valore di default è 3.",
+      "value": "3",
+      "required": false
+    },
+    "OCR_SPACE_API_KEY": {
+      "description": "Requisito per ocr.py Vai su https://ocr.space/ocrapi e copia API.",
+      "value": "",
+      "required": false
+    },
+    "DEFAULT_BIO": {
+      "description": "Requisito per autoprofilo.py impostala per far funzionare il plugin.",
+      "value": "",
+      "required": false    
+    },
+    "REM_BG_API_KEY": {
+      "description": "Requisito per il modulo autobio, imposta la tua bio personale.",
+      "value": "",
+      "required": false
+    },
+    "GITHUB_ACCESS_TOKEN": {
+      "description": "Requisito per gitcommit.py Vai sul tuo account e copia 'Github access token' e inserisci il token per usarlo.",
+      "value": "",
+      "required": false
+    },
+    "GIT_REPO_NAME": {
+      "description": "Inserisci il nome del tuo repo solo se hai inserito GITHUB_ACCESS_TOKEN.",
+      "value": "",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Vai su https://telegra.ph/Lydia-09-05 e scopri come funziona.",
+      "value": "",
+      "required": false
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "Crea un bot con http://t.me/BotFather e inserisci il token personale del tuo bot.",
+      "value": ""
+    },
+    "CHROME_BIN": {
+      "description": "Requisito carbon.py. Non toccare. ",
+      "value": "/app/.apt/usr/bin/google-chrome",
+      "required": false
+    },
+    "CHROME_DRIVER": {
+      "description": "Requisito carbon.py. Non toccare. ",
+      "value": "/app/.chromedriver/bin/chromedriver",
+      "required": false
+    },
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "Crea un bot con http://t.me/BotFather e inserisci l'username in http.",
+      "value": ""
+    },
+    "DEFAULT_PIC": {
+      "description": "Requisito per autopic.py Url preview link della tua Pic Profilo.",
       "value": "",
       "required": false
     },
     "TZ": {
-      "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
-      "value": "Asia/Kolkata",
-      "required": false
-    },
-    "UPSTREAM_REPO": {
-      "description": "Use either goodcat or badcat .if you need custom deploy then type your git repo link",
-      "value": "goodcat",
+      "description": "Requisito per autopic.py Vai su http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+      "value": "Europe/Rome",
       "required": false
     }
   },
   "addons": [{
     "plan": "heroku-postgresql",
     "options": {
-      "version": "12"
+      "version": "13"
     }
   }],
   "buildpacks": [{
