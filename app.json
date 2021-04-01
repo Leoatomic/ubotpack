@@ -105,6 +105,10 @@
       "value": "",
       "required": false
     },
+    "UPSTREAM_REPO": {
+      "description": ".",
+      "value": "https://github.com/Leoatomic/Userbot"
+    },
     "TZ": {
       "description": "Requisito per autopic.py Vai su http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
       "value": "Europe/Rome",
