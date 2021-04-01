@@ -9,7 +9,7 @@ beautifulsoup4==4.6.0
 bs4
 bwb==3.0.0
 cfscrape
-coffeehouse
+coffeehouse==2.2.4
 coronavirus
 covid
 cowpy
@@ -49,7 +49,7 @@ requests>=2.18.4
 search-engine-parser>=0.4.2
 selenium
 speedtest-cli>=2.0.2
-sqlalchemy>=1.2
+sqlalchemy==1.3.23
 telegraph
 asyncurban
 urbandict
