@@ -1,5 +1,5 @@
 {
-  "name": "userbot",
+  "name": "Atomic-Userbot",
   "logo": "https://telegra.ph/file/c8ac158ed6ce3799d8dac.jpg",
   "repository": "https://github.com/leoatomic/userbot",
   "env": {
@@ -13,13 +13,16 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Inserisci la @ del tuo account Telegram",
+      "description": "Inserisci la @ del tuo account Telegram.",
       "value": ""
     },
     "AUTONAME": {
-      "description": "Requisito per il modulo autoprofilo.py imposta un nome che apparirà come nome di telegram.",
-      "value": "",
-      "required": false
+      "description": "Il tuo nome di telegram.",
+      "value": ""
+    },
+    "TG_ID": {
+      "description": "Il tuo ID di telegram",
+      "value": ""
     },
     "APP_ID": {
       "description": "Valori ottenuti da my.telegram.org!",
@@ -58,7 +61,7 @@
       "required": false
     },
     "DEFAULT_BIO": {
-      "description": "Requisito per autoprofilo.py impostala per far funzionare il plugin.",
+      "description": "Requisito per l'autobio impostala per far funzionare il plugin.",
       "value": "",
       "required": false    
     },
@@ -76,12 +79,7 @@
       "description": "Inserisci il nome del tuo repo solo se hai inserito GITHUB_ACCESS_TOKEN.",
       "value": "",
       "required": false
-    },
-    "LYDIA_API_KEY": {
-      "description": "Vai su https://telegra.ph/Lydia-09-05 e scopri come funziona.",
-      "value": "",
-      "required": false
-    },
+    },    
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Crea un bot con http://t.me/BotFather e inserisci il token personale del tuo bot.",
       "value": ""
@@ -99,11 +97,6 @@
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "Crea un bot con http://t.me/BotFather e inserisci l'username in http.",
       "value": ""
-    },
-    "DEFAULT_PIC": {
-      "description": "Requisito per autopic.py Url preview link della tua Pic Profilo.",
-      "value": "",
-      "required": false
     },
     "UPSTREAM_REPO": {
       "description": ".",
