@@ -2,7 +2,7 @@ telethon>=1.10.3
 Pillow>=5.3.0
 PyGithub
 aiofiles
-aiohttp>=3.7.4
+aiohttp==3.6.2
 aria2p
 async_generator
 beautifulsoup4==4.9.1
@@ -28,7 +28,7 @@ hachoir
 heroku3
 httplib2 >=0.18.0
 humanize
-lxml>=4.6.3
+lxml==4.5.2
 oauth2client
 psycopg2
 psycopg2-binary
