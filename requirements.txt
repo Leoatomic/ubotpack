@@ -30,6 +30,7 @@ httplib2 >=0.18.0
 humanize
 lxml>=4.6.3
 oauth2client
+pygoogletranslation
 psycopg2
 psycopg2-binary
 pySmartDL
