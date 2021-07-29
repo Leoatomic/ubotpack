@@ -33,8 +33,9 @@
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "Valore ottenuto da termux o telesetup.py",
-      "value": ""
+      "description": "String session del tuo account tg",
+      "value": "",
+      "required": false
     },
     "HEROKU_API_KEY": {
       "description": "Vai su https://dashboard.heroku.com/account, vai su API KEY premi Reveal e copiala.",
@@ -50,11 +51,6 @@
       "description": "Crea un gruppo privato e inserisci il ChatId per il log (es:-10012345678).",
       "value": ""
     },
-    "MAX_FLOOD_IN_P_M_s": {
-      "description": "Massimo numero di messaggi che una persona può inviarti prima di essere bloccata. Valore di default è 3.",
-      "value": "3",
-      "required": false
-    },
     "OCR_SPACE_API_KEY": {
       "description": "Requisito per ocr.py Vai su https://ocr.space/ocrapi e copia API.",
       "value": "",
@@ -67,16 +63,6 @@
     },
     "REM_BG_API_KEY": {
       "description": "Requisito per il modulo autobio, imposta la tua bio personale.",
-      "value": "",
-      "required": false
-    },
-    "GITHUB_ACCESS_TOKEN": {
-      "description": "Requisito per gitcommit.py Vai sul tuo account e copia 'Github access token' e inserisci il token per usarlo.",
-      "value": "",
-      "required": false
-    },
-    "GIT_REPO_NAME": {
-      "description": "Inserisci il nome del tuo repo solo se hai inserito GITHUB_ACCESS_TOKEN.",
       "value": "",
       "required": false
     },    
