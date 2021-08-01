@@ -22,7 +22,13 @@ _get_ziplink () {
         echo "aHR0cHM6Ly9naXRodWIuY29tL0xlb2F0b21pYy9Vc2VyYm90L2FyY2hpdmUvcmVmcy9oZWFkcy9tYWluLnppcA==" | base64 -d
     fi
 }
-
+#     .-  -. 
+#    /(    )\  
+#   |  -^^-  | 
+#    \_ `' _/
+#      \  )    
+#       )/     
+#      (' 
 _get_repolink () {
     local regex
     local rlink
